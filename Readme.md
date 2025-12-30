@@ -2,6 +2,14 @@
 
 A professional-grade, high-precision compass application for iOS. Built using **SwiftUI**, **SwiftData**, and **CoreLocation**, this app allows users to find the Qibla (Kaaba) direction and manage custom Points of Interest (POI) with a premium, customizable interface.
 
+## 🚀 How to install
+
+Use [alt store classic](https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows) to install the app.
+
+Source for [AltStore](https://gist.githubusercontent.com/aminekun90/7cc4885b56e0b0f1212db1ecf9c24369/raw/77d7ed4504db5a41b29770c65f452e1f6e5a05c8/altstore.json)
+
+Currently this app is not available on the App Store if you want it you can donate via [paypal me](https://www.paypal.com/paypalme/aminebouzahar).
+
 ## ✨ Key Features
 
 * **Fixed Qibla Reference:** A hardcoded, non-deletable indicator for the Kaaba ($21.42248^\circ$ N, $39.82621^\circ$ E) that remains active regardless of user data.

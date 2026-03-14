@@ -72,7 +72,7 @@ struct ContentView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("QIBLA & POI").foregroundColor(.white).tracking(2).bold()
+                    Text("QIBLA & ME").foregroundColor(.white).tracking(2).bold()
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
@@ -114,7 +114,7 @@ struct ContentView: View {
                 .fill(compass.lastLocation == nil ? Color.red : Color.green)
                 .frame(width: 8, height: 8)
             
-            Text(compass.lastLocation == nil ? "SEARCHING GPS..." : "GPS ACTIVE")
+            Text(compass.lastLocation == nil ? "SEARCHING GPS..." : "GPS ENABLED")
                 .font(.system(size: 10, weight: .black))
                 .foregroundColor(.white.opacity(0.6))
         }

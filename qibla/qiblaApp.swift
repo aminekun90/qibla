@@ -3,15 +3,14 @@ import SwiftData
 
 @main
 struct qiblaApp: App {
-    // State to control which screen is visible
     @State private var showSplash = true
+    @Environment(\.scenePhase) private var scenePhase // Détecte la mise en veille
     
+    // On utilise "MainActor" pour garantir que le container est géré sur le thread principal
+    @MainActor
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            PointOfInterest.self,
-        ])
+        let schema = Schema([PointOfInterest.self])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
@@ -24,23 +23,27 @@ struct qiblaApp: App {
             ZStack {
                 if showSplash {
                     SplashScreenView()
-                        .transition(.opacity) // Smooth fade out
+                        .transition(.opacity.combined(with: .scale(scale: 1.1)))
+                        .zIndex(1)
                 } else {
                     ContentView()
-                        .transition(.asymmetric(insertion: .opacity, removal: .identity))
                 }
             }
             .onAppear {
-                // Adjust delay to your preference (2.0 seconds is standard)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                    withAnimation(.easeOut(duration: 0.6)) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+                    withAnimation(.easeInOut(duration: 0.8)) {
                         showSplash = false
                     }
                 }
             }
         }
         .modelContainer(sharedModelContainer)
+        // Gérer le cycle de vie pour éviter les sauvegardes forcées instables
+        .onChange(of: scenePhase) { oldPhase, newPhase in
+            if newPhase == .background {
+                // Ici, SwiftData sauvegarde automatiquement de manière sécurisée.
+                // Ne force jamais de save() manuel ici avec "try!"
+            }
+        }
     }
 }
-
-

@@ -15,6 +15,8 @@ Source for [AltStore](https://gist.githubusercontent.com/aminekun90/7cc4885b56e0
 
 Currently this app is not available on the App Store if you want it you can donate via [paypal me](https://www.paypal.com/paypalme/aminebouzahar).
 
+Comming soon on the app store stay tuned !!
+
 ## ✨ Key Features
 
 * **Fixed Qibla Reference:** A hardcoded, non-deletable indicator for the Kaaba ($21.42248^\circ$ N, $39.82621^\circ$ E) that remains active regardless of user data.
@@ -90,3 +92,12 @@ DesignPickerView.swift: Theme selection interface.
 ### 📜 License
 
 This project is available under the MIT License.
+
+### Contributors
+
+* [aminekun90](https://github.com/aminekun90)
+* [Miirwan](https://github.com/Miirwan)
+
+### Special Thanks
+
+To all supporters on [PayPal](https://www.paypal.com/paypalme/aminebouzahar) and contributors.

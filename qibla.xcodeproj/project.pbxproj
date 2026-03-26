@@ -6,6 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6706BE242F6F3C93007E320C /* AddPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE152F6F3C93007E320C /* AddPointView.swift */; };
+		6706BE252F6F3C93007E320C /* CompassDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE172F6F3C93007E320C /* CompassDialView.swift */; };
+		6706BE262F6F3C93007E320C /* CompassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE182F6F3C93007E320C /* CompassManager.swift */; };
+		6706BE272F6F3C93007E320C /* CompassStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE192F6F3C93007E320C /* CompassStyle.swift */; };
+		6706BE282F6F3C93007E320C /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE1A2F6F3C93007E320C /* CompassView.swift */; };
+		6706BE292F6F3C93007E320C /* DesignPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE1B2F6F3C93007E320C /* DesignPickerView.swift */; };
+		6706BE2A2F6F3C93007E320C /* Location+Bearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE1D2F6F3C93007E320C /* Location+Bearing.swift */; };
+		6706BE2B2F6F3C93007E320C /* POICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE1E2F6F3C93007E320C /* POICard.swift */; };
+		6706BE2C2F6F3C93007E320C /* POINeedle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE1F2F6F3C93007E320C /* POINeedle.swift */; };
+		6706BE2D2F6F3C93007E320C /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE202F6F3C93007E320C /* PointOfInterest.swift */; };
+		6706BE2E2F6F3C93007E320C /* qiblaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE212F6F3C93007E320C /* qiblaApp.swift */; };
+		6706BE2F2F6F3C93007E320C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE222F6F3C93007E320C /* SplashScreenView.swift */; };
+		6706BE302F6F3C93007E320C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6706BE162F6F3C93007E320C /* Assets.xcassets */; };
+		6706BE432F6F4417007E320C /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE422F6F4414007E320C /* AppTab.swift */; };
+		6706BE472F6F446A007E320C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE462F6F4465007E320C /* MainTabView.swift */; };
+		6706BE4B2F6F451B007E320C /* AdhanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706BE4A2F6F451B007E320C /* AdhanView.swift */; };
+		67606A9B2F70987A005828C5 /* Moonsighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67606A9A2F70987A005828C5 /* Moonsighting.swift */; };
+		677564A82F6F4D7300CEAAA4 /* AstroEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677564A72F6F4D7000CEAAA4 /* AstroEngine.swift */; };
+		677564AC2F6F50D500CEAAA4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677564AB2F6F50D200CEAAA4 /* Color.swift */; };
+		677564AE2F6F62B400CEAAA4 /* LocationPrayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677564AD2F6F62B400CEAAA4 /* LocationPrayerService.swift */; };
+		677564B02F7090AA00CEAAA4 /* PrayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677564AF2F7090AA00CEAAA4 /* PrayerRow.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		67CD5EE72EFEFF340007A6F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,30 +48,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6706BE152F6F3C93007E320C /* AddPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPointView.swift; sourceTree = "<group>"; };
+		6706BE162F6F3C93007E320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6706BE172F6F3C93007E320C /* CompassDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassDialView.swift; sourceTree = "<group>"; };
+		6706BE182F6F3C93007E320C /* CompassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassManager.swift; sourceTree = "<group>"; };
+		6706BE192F6F3C93007E320C /* CompassStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassStyle.swift; sourceTree = "<group>"; };
+		6706BE1A2F6F3C93007E320C /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		6706BE1B2F6F3C93007E320C /* DesignPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPickerView.swift; sourceTree = "<group>"; };
+		6706BE1C2F6F3C93007E320C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6706BE1D2F6F3C93007E320C /* Location+Bearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Bearing.swift"; sourceTree = "<group>"; };
+		6706BE1E2F6F3C93007E320C /* POICard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICard.swift; sourceTree = "<group>"; };
+		6706BE1F2F6F3C93007E320C /* POINeedle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POINeedle.swift; sourceTree = "<group>"; };
+		6706BE202F6F3C93007E320C /* PointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterest.swift; sourceTree = "<group>"; };
+		6706BE212F6F3C93007E320C /* qiblaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qiblaApp.swift; sourceTree = "<group>"; };
+		6706BE222F6F3C93007E320C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		6706BE422F6F4414007E320C /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		6706BE462F6F4465007E320C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6706BE4A2F6F451B007E320C /* AdhanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdhanView.swift; sourceTree = "<group>"; };
+		67606A9A2F70987A005828C5 /* Moonsighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moonsighting.swift; sourceTree = "<group>"; };
+		677564A72F6F4D7000CEAAA4 /* AstroEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroEngine.swift; sourceTree = "<group>"; };
+		677564AB2F6F50D200CEAAA4 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		677564AD2F6F62B400CEAAA4 /* LocationPrayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPrayerService.swift; sourceTree = "<group>"; };
+		677564AF2F7090AA00CEAAA4 /* PrayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerRow.swift; sourceTree = "<group>"; };
 		67CD5ED72EFEFF320007A6F8 /* qibla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qibla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD5EE62EFEFF340007A6F8 /* qiblaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qiblaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD5EF02EFEFF340007A6F8 /* qiblaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qiblaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6754DFF32F04034C007D3672 /* Exceptions for "qibla" folder in "qibla" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 67CD5ED62EFEFF320007A6F8 /* qibla */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		67CD5ED92EFEFF320007A6F8 /* qibla */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				6754DFF32F04034C007D3672 /* Exceptions for "qibla" folder in "qibla" target */,
-			);
-			path = qibla;
-			sourceTree = "<group>";
-		};
 		67CD5EE92EFEFF340007A6F8 /* qiblaTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = qiblaTests;
@@ -85,10 +113,199 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6706BE232F6F3C93007E320C /* qibla */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE402F6F3DB5007E320C /* UIComponents */,
+				6706BE3A2F6F3D18007E320C /* Features */,
+				6706BE372F6F3CF9007E320C /* Data */,
+				6706BE332F6F3CC0007E320C /* Core */,
+				6706BE162F6F3C93007E320C /* Assets.xcassets */,
+				6706BE322F6F3CAE007E320C /* App */,
+				6706BE1C2F6F3C93007E320C /* Info.plist */,
+			);
+			path = qibla;
+			sourceTree = "<group>";
+		};
+		6706BE322F6F3CAE007E320C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE212F6F3C93007E320C /* qiblaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6706BE332F6F3CC0007E320C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE362F6F3CE9007E320C /* Themes */,
+				6706BE352F6F3CDF007E320C /* Utils */,
+				6706BE342F6F3CCC007E320C /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6706BE342F6F3CCC007E320C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				677564AB2F6F50D200CEAAA4 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6706BE352F6F3CDF007E320C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE182F6F3C93007E320C /* CompassManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6706BE362F6F3CE9007E320C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE192F6F3C93007E320C /* CompassStyle.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		6706BE372F6F3CF9007E320C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE392F6F3D0C007E320C /* Services */,
+				6706BE382F6F3D01007E320C /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6706BE382F6F3D01007E320C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE422F6F4414007E320C /* AppTab.swift */,
+				6706BE202F6F3C93007E320C /* PointOfInterest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6706BE392F6F3D0C007E320C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				67606A9A2F70987A005828C5 /* Moonsighting.swift */,
+				677564AD2F6F62B400CEAAA4 /* LocationPrayerService.swift */,
+				677564A72F6F4D7000CEAAA4 /* AstroEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6706BE3A2F6F3D18007E320C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE482F6F4507007E320C /* Adhan */,
+				6706BE442F6F444A007E320C /* Main */,
+				6706BE3F2F6F3DA5007E320C /* PointManagement */,
+				6706BE3E2F6F3D89007E320C /* Onboarding */,
+				6706BE3B2F6F3D37007E320C /* Compass */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6706BE3B2F6F3D37007E320C /* Compass */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE3D2F6F3D5B007E320C /* ViewModel */,
+				6706BE3C2F6F3D52007E320C /* Views */,
+			);
+			path = Compass;
+			sourceTree = "<group>";
+		};
+		6706BE3C2F6F3D52007E320C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE172F6F3C93007E320C /* CompassDialView.swift */,
+				6706BE1F2F6F3C93007E320C /* POINeedle.swift */,
+				6706BE1A2F6F3C93007E320C /* CompassView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6706BE3D2F6F3D5B007E320C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6706BE3E2F6F3D89007E320C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE222F6F3C93007E320C /* SplashScreenView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6706BE3F2F6F3DA5007E320C /* PointManagement */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE1D2F6F3C93007E320C /* Location+Bearing.swift */,
+				6706BE1E2F6F3C93007E320C /* POICard.swift */,
+				6706BE1B2F6F3C93007E320C /* DesignPickerView.swift */,
+				6706BE152F6F3C93007E320C /* AddPointView.swift */,
+			);
+			path = PointManagement;
+			sourceTree = "<group>";
+		};
+		6706BE402F6F3DB5007E320C /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE412F6F3DC6007E320C /* Buttons */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		6706BE412F6F3DC6007E320C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		6706BE442F6F444A007E320C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE452F6F445A007E320C /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6706BE452F6F445A007E320C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE462F6F4465007E320C /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6706BE482F6F4507007E320C /* Adhan */ = {
+			isa = PBXGroup;
+			children = (
+				6706BE492F6F4510007E320C /* Views */,
+			);
+			path = Adhan;
+			sourceTree = "<group>";
+		};
+		6706BE492F6F4510007E320C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				677564AF2F7090AA00CEAAA4 /* PrayerRow.swift */,
+				6706BE4A2F6F451B007E320C /* AdhanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		67CD5ECE2EFEFF320007A6F8 = {
 			isa = PBXGroup;
 			children = (
-				67CD5ED92EFEFF320007A6F8 /* qibla */,
+				6706BE232F6F3C93007E320C /* qibla */,
 				67CD5EE92EFEFF340007A6F8 /* qiblaTests */,
 				67CD5EF32EFEFF340007A6F8 /* qiblaUITests */,
 				67CD5ED82EFEFF320007A6F8 /* Products */,
@@ -119,9 +336,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				67CD5ED92EFEFF320007A6F8 /* qibla */,
 			);
 			name = qibla;
 			packageProductDependencies = (
@@ -225,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6706BE302F6F3C93007E320C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +464,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6706BE242F6F3C93007E320C /* AddPointView.swift in Sources */,
+				6706BE252F6F3C93007E320C /* CompassDialView.swift in Sources */,
+				6706BE262F6F3C93007E320C /* CompassManager.swift in Sources */,
+				677564B02F7090AA00CEAAA4 /* PrayerRow.swift in Sources */,
+				6706BE272F6F3C93007E320C /* CompassStyle.swift in Sources */,
+				677564AC2F6F50D500CEAAA4 /* Color.swift in Sources */,
+				6706BE4B2F6F451B007E320C /* AdhanView.swift in Sources */,
+				67606A9B2F70987A005828C5 /* Moonsighting.swift in Sources */,
+				6706BE282F6F3C93007E320C /* CompassView.swift in Sources */,
+				6706BE292F6F3C93007E320C /* DesignPickerView.swift in Sources */,
+				6706BE2A2F6F3C93007E320C /* Location+Bearing.swift in Sources */,
+				6706BE2B2F6F3C93007E320C /* POICard.swift in Sources */,
+				6706BE2C2F6F3C93007E320C /* POINeedle.swift in Sources */,
+				6706BE2D2F6F3C93007E320C /* PointOfInterest.swift in Sources */,
+				677564A82F6F4D7300CEAAA4 /* AstroEngine.swift in Sources */,
+				6706BE2E2F6F3C93007E320C /* qiblaApp.swift in Sources */,
+				6706BE472F6F446A007E320C /* MainTabView.swift in Sources */,
+				677564AE2F6F62B400CEAAA4 /* LocationPrayerService.swift in Sources */,
+				6706BE2F2F6F3C93007E320C /* SplashScreenView.swift in Sources */,
+				6706BE432F6F4417007E320C /* AppTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

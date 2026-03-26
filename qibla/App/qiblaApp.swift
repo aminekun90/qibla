@@ -4,9 +4,9 @@ import SwiftData
 @main
 struct qiblaApp: App {
     @State private var showSplash = true
-    @Environment(\.scenePhase) private var scenePhase // Détecte la mise en veille
+    @Environment(\.scenePhase) private var scenePhase
     
-    // On utilise "MainActor" pour garantir que le container est géré sur le thread principal
+    // Le ModelContainer est configuré pour PointOfInterest
     @MainActor
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([PointOfInterest.self])
@@ -14,36 +14,40 @@ struct qiblaApp: App {
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+            fatalError("Erreur lors de la création du ModelContainer : \(error)")
         }
     }()
 
     var body: some Scene {
         WindowGroup {
-            ZStack {
+            Group {
                 if showSplash {
                     SplashScreenView()
                         .transition(.opacity.combined(with: .scale(scale: 1.1)))
-                        .zIndex(1)
                 } else {
-                    ContentView()
+                    MainTabView()
+                        .transition(.opacity)
                 }
             }
+            .animation(.easeInOut(duration: 0.8), value: showSplash)
             .onAppear {
+                // Délai du Splash Screen
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
-                    withAnimation(.easeInOut(duration: 0.8)) {
-                        showSplash = false
-                    }
+                    showSplash = false
                 }
             }
         }
         .modelContainer(sharedModelContainer)
-        // Gérer le cycle de vie pour éviter les sauvegardes forcées instables
-        .onChange(of: scenePhase) { oldPhase, newPhase in
-            if newPhase == .background {
-                // Ici, SwiftData sauvegarde automatiquement de manière sécurisée.
-                // Ne force jamais de save() manuel ici avec "try!"
-            }
-        }
     }
+}
+
+#Preview {
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: PointOfInterest.self, configurations: config)
+    
+    return Group {
+        // On peut tester l'état "App" global ici
+        SplashScreenView()
+    }
+    .modelContainer(container)
 }

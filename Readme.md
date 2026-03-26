@@ -2,9 +2,9 @@
 
 A professional-grade, high-precision compass application for iOS. Built using **SwiftUI**, **SwiftData**, and **CoreLocation**, this app allows users to find the Qibla (Kaaba) direction and manage custom Points of Interest (POI) with a premium, customizable interface.
 <div align="center">
-<img src="docs/assets/new-splash.png" alt="splash" width="205"/>
-<img src="docs/assets/compass.png" alt="compass" width="200"/>
-<img src="docs/assets/theme.png" alt="theme" width="200"/>
+    <img src="docs/assets/new-splash.png" alt="splash" width="205"/>
+    <img src="docs/assets/compass.png" alt="compass" width="200"/>
+    <img src="docs/assets/theme.png" alt="theme" width="200"/>
 </div>
 
 ## 🚀 How to install
